@@ -14,7 +14,6 @@ if (!require("BiocManager")){
     BiocManager::install()}
 
 if (!require("alevinQC")) {
-  BiocManager::install(c("rmarkdown","tools", "methods","ggplot2","GGally","dplyr","rjson","shiny","shinydashboard","DT","stats","utils","cowplot"))
   install.packages("$baseDir/assets/tximport_1.11.7.tar.gz ", repos=FALSE, source=TRUE)
   install.packages("$baseDir/assets/alevinQC_0.99.3.tar.gz", repos=FALSE, source=TRUE)
 }

@@ -8,10 +8,10 @@ channels:
 dependencies:
   # TODO nf-core: Add required software dependencies here
   - conda-forge::python
-  - bioconda::multiqc
   - bioconda::salmon
   - bioconda::r-seurat
   - bioconda::bioconductor-isee
   - bioconda::bioconductor-tximeta
   - conda-forge::r-markdown
   - bioconda::bioawk
+  - bioconda::bioconductor-alevinqc
