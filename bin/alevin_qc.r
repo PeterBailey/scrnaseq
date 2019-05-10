@@ -9,15 +9,11 @@ if (length(args) < 3) {
 
 print(R.Version())
 
-if (!require("BiocManager")){
-    install.packages("BiocManager", dependencies=TRUE, repos='http://cloud.r-project.org/')
-    BiocManager::install()}
-
-if (!require("alevinQC")) {
-  install.packages("$baseDir/assets/tximport_1.11.7.tar.gz ", repos=FALSE, source=TRUE)
-  install.packages("$baseDir/assets/alevinQC_0.99.3.tar.gz", repos=FALSE, source=TRUE)
+if (!requireNamespace("BiocManager", quietly = TRUE)){
+    install.packages("BiocManager")
+    BiocManager::install("alevinQC")
+    BiocManager::install("tximport")
 }
-
 
 require(alevinQC)
 require(tximport)
