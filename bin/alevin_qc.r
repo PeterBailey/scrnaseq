@@ -4,9 +4,10 @@
 args <- commandArgs(trailingOnly=TRUE)
 
 if (length(args) < 3) {
-  stop("Usage: postprocessing.r <baseDir> <sampleId> <outDir>", call.=FALSE)
+  stop("Usage: alevin_qc.r <baseDir> <sampleId> <outDir>", call.=FALSE)
 }
 
+<<<<<<< HEAD
 print(R.Version())
 
 if (!requireNamespace("BiocManager", quietly = TRUE)){
@@ -15,6 +16,8 @@ if (!requireNamespace("BiocManager", quietly = TRUE)){
     BiocManager::install("tximport")
 }
 
+=======
+>>>>>>> 1b5881cd0a03c050c6986b519aea5c233fdd5f84
 require(alevinQC)
 require(tximport)
 
